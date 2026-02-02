@@ -77,9 +77,11 @@
 
 <div class="container">
 
-<h1>Free AI Caption Generator</h1>
+<h1>Free AI Caption Generator</h1> 
+  
+  <p><strong>Free online AI tool to generate Instagram, Facebook & YouTube captions instantly.</strong></p>
 
-<p>
+  <p>
 Welcome to our Free AI Caption Generator tool. This website helps you create creative, engaging, and viral captions for social media platforms like Instagram, Facebook, YouTube, and Twitter.
 </p>
 
@@ -132,6 +134,22 @@ function generateCaption() {
 
   document.getElementById("output").innerText =
     "This is a sample " + tone + " caption about " + topic + ".";
+}
+</script>
+<script>
+function generate() {
+  const topic = document.getElementById("topic").value;
+  const tone = document.getElementById("tone").value;
+  const output = document.getElementById("output");
+
+  if (topic.trim() === "") {
+    output.innerText = "Please enter a topic first.";
+    return;
+  }
+
+  output.innerText =
+    "Here is a " + tone + " caption about " + topic +
+    ": Stay consistent, stay focused, and keep pushing forward! 🚀";
 }
 </script>
 
