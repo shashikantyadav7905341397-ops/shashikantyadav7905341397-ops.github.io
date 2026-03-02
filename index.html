@@ -1,68 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Free AI Caption Generator – Online AI Tool</title>
+<meta name="description" content="Free AI Caption Generator to create Instagram, Facebook & YouTube captions instantly. No signup required.">
 
-  <title>Free AI Caption Generator – Online AI Tool</title>
-  <meta name="description" content="Free AI Caption Generator to create Instagram, Facebook & YouTube captions instantly. No signup required. Simple and fast AI tool.">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087272402697007"
+crossorigin="anonymous"></script>
 
-  <!-- ✅ Google AdSense (ONLY ONCE & CORRECT PLACE) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087272402697007"
-     crossorigin="anonymous"></script>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #ffffff;
-      padding: 20px 30px;
-    }
-    h1, h2, h3 {
-      color: #222;
-    }
-    p, li {
-      color: #444;
-    }
-    .tool-box {
-      background: #f1f1f1;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 5px;
-    }
-    input, select, button {
-      padding: 10px;
-      width: 100%;
-      margin: 8px 0;
-    }
-    button {
-      background: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    #output {
-      margin-top: 15px;
-      padding: 10px;
-      background: #fff;
-      border: 1px solid #ccc;
-    }
-    footer {
-      margin-top: 30px;
-      border-top: 1px solid #ccc;
-      padding-top: 10px;
-      font-size: 14px;
-      text-align: center;
-    }
-  </style>
+<style>
+body{font-family:Arial;background:#f4f6f8;margin:0}
+.container{max-width:900px;margin:auto;background:#fff;padding:20px}
+input,select,button{width:100%;padding:10px;margin:8px 0}
+button{background:#007bff;color:#fff;border:none}
+#output{margin-top:10px;padding:10px;border:1px solid #ccc}
+footer{text-align:center;margin-top:20px;font-size:14px}
+</style>
 </head>
 
 <body>
@@ -71,69 +25,53 @@
 <h1>Free AI Caption Generator</h1>
 
 <p>
-Our Free AI Caption Generator helps content creators, influencers, and businesses generate engaging captions for Instagram, Facebook, YouTube, and Twitter using AI.
+This free AI Caption Generator helps creators generate engaging captions for Instagram, Facebook, YouTube, and Twitter. 
+No login required. 100% free tool.
 </p>
 
 <p>
-This tool is 100% free, requires no signup, and works instantly on both mobile and desktop. Simply enter a topic, choose a tone, and get high-quality captions in seconds.
+Just enter your topic, select a tone, and get a ready-to-use caption instantly.
 </p>
 
-<h2>Who Is This Tool For?</h2>
+<h2>AI Caption Generator Tool</h2>
+
+<input id="topic" placeholder="Enter topic (fitness, travel)">
+<select id="tone">
+<option>Motivational</option>
+<option>Funny</option>
+<option>Professional</option>
+</select>
+
+<button onclick="generateCaption()">Generate Caption</button>
+
+<div id="output">Your caption will appear here...</div>
+
+<h2>Who Should Use This Tool?</h2>
 <ul>
-  <li>Social media influencers</li>
-  <li>YouTubers & content creators</li>
-  <li>Digital marketers</li>
-  <li>Small business owners</li>
-</ul>
-
-<div class="tool-box">
-  <h2>AI Caption Generator Tool</h2>
-
-  <input id="topic" placeholder="Enter topic (fitness, travel)">
-  
-  <select id="tone">
-    <option>Motivational</option>
-    <option>Funny</option>
-    <option>Professional</option>
-  </select>
-
-  <button onclick="generateCaption()">Generate Caption</button>
-
-  <div id="output">Your caption will appear here...</div>
-</div>
-
-<h2>Why Use Our AI Caption Generator?</h2>
-<ul>
-  <li>100% free to use</li>
-  <li>No signup required</li>
-  <li>Fast and easy interface</li>
-  <li>SEO-friendly captions</li>
+<li>Content creators</li>
+<li>Social media influencers</li>
+<li>Small business owners</li>
+<li>Digital marketers</li>
 </ul>
 
 <footer>
-  <a href="about.html">About Us</a> |
-  <a href="privacy-policy.html">Privacy Policy</a> |
-  <a href="contact.html">Contact Us</a>
+<a href="how-it-works.html">How It Works</a> |
+<a href="examples.html">Examples</a> |
+<a href="faq.html">FAQ</a> |
+<a href="blog.html">Blog</a> |
+<a href="privacy-policy.html">Privacy Policy</a>
 </footer>
 
 </div>
 
 <script>
-function generateCaption() {
-  const topic = document.getElementById("topic").value;
-  const tone = document.getElementById("tone").value;
-  const output = document.getElementById("output");
-
-  if (!topic.trim()) {
-    output.innerText = "Please enter a topic.";
-    return;
-  }
-
-  output.innerText =
-    "Here is a " + tone + " caption about " + topic +
-    ": Stay consistent, stay creative, and keep growing 🚀";
+function generateCaption(){
+let topic=document.getElementById("topic").value;
+let tone=document.getElementById("tone").value;
+if(!topic){document.getElementById("output").innerText="Enter a topic";return;}
+document.getElementById("output").innerText=
+tone+" caption about "+topic+": Stay consistent and keep growing 🚀";
 }
 </script>
-
 </body>
 </html>
