@@ -84,12 +84,38 @@ Advanced AI features are under development.
 </div>
 
 <script>
-function generateCaption(){
-const topic=document.getElementById("topic").value;
-const tone=document.getElementById("tone").value;
-const output=document.getElementById("output");
-if(!topic.trim()){output.innerText="Please enter a topic.";return;}
-output.innerText="Here is a "+tone+" caption about "+topic+": Stay consistent, stay creative, and keep growing 🚀";
+function generateCaption() {
+  const topic = document.getElementById("topic").value.trim();
+  const tone = document.getElementById("tone").value;
+  const output = document.getElementById("output");
+
+  if (!topic) {
+    output.innerText = "Please enter a topic.";
+    return;
+  }
+
+  const captions = {
+    Motivational: [
+      `Stay consistent with ${topic}. Success is coming 💪`,
+      `${topic} is not a choice, it's a lifestyle 🔥`,
+      `Push harder today for a better ${topic} tomorrow 🚀`
+    ],
+    Funny: [
+      `${topic}? I thought about it… then ate pizza 😂`,
+      `${topic} starts tomorrow… maybe 😅`,
+      `Doing ${topic} but thinking about snacks 🍕`
+    ],
+    Professional: [
+      `${topic} requires discipline, focus, and long-term commitment.`,
+      `Consistency in ${topic} leads to measurable results.`,
+      `Build sustainable habits around ${topic}.`
+    ]
+  };
+
+  const list = captions[tone];
+  const randomCaption = list[Math.floor(Math.random() * list.length)];
+
+  output.innerText = randomCaption;
 }
 </script>
 
