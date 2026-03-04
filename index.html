@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Free AI Caption Generator – Create Social Media Captions Online</title>
-<meta name="description" content="Free AI Caption Generator to create Instagram, Facebook & YouTube captions instantly. No signup required. 100% free AI tool.">
+<title>Free AI Caption Generator | Social Media Caption Tool</title>
+<meta name="description" content="Free AI Caption Generator to create social media captions for Instagram, Facebook, YouTube & Twitter. No signup required. Simple and fast online tool.">
 
 <!-- Google AdSense (ONLY ONCE) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087272402697007"
@@ -13,40 +13,53 @@ crossorigin="anonymous"></script>
 
 <style>
 body{font-family:Arial;background:#f4f6f8;margin:0}
+header{background:#007bff;color:#fff;padding:15px}
+nav a{color:#fff;margin-right:15px;text-decoration:none;font-size:14px}
 .container{max-width:900px;margin:auto;background:#fff;padding:20px}
 h1,h2,h3{color:#222}
-p,li{color:#444;line-height:1.6}
-.tool-box{background:#f1f1f1;padding:15px;margin:20px 0;border-radius:5px}
+p,li{color:#444;line-height:1.7}
+.tool-box{background:#f1f1f1;padding:15px;margin:25px 0;border-radius:5px}
 input,select,button{width:100%;padding:10px;margin:8px 0}
 button{background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer}
 #output{margin-top:10px;padding:10px;background:#fff;border:1px solid #ccc}
-footer{text-align:center;margin-top:30px;font-size:14px}
+footer{text-align:center;margin-top:40px;font-size:14px;border-top:1px solid #ddd;padding-top:15px}
+.note{font-size:13px;color:#666}
 </style>
 </head>
 
 <body>
+
+<header>
+<nav>
+<a href="index.html">Home</a>
+<a href="how-it-works.html">How It Works</a>
+<a href="faq.html">FAQ</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
 <div class="container">
 
 <h1>Free AI Caption Generator</h1>
 
 <p>
-Our Free AI Caption Generator helps creators, influencers, and businesses generate engaging social media captions quickly.
-This tool is designed to save time and boost engagement on Instagram, Facebook, YouTube, and Twitter.
+Welcome to our Free AI Caption Generator — an easy-to-use online tool created to help content creators,
+marketers, and businesses generate engaging social media captions in seconds.
 </p>
 
-<h2>What is an AI Caption Generator?</h2>
+<h2>What Is This Tool?</h2>
 <p>
-An AI Caption Generator is an online tool that uses artificial intelligence concepts to generate sample captions
-based on user input. It helps users get creative ideas instantly.
+This AI Caption Generator provides sample caption ideas based on user input such as topic and tone.
+It is designed to help users overcome writer’s block and save time while creating content.
 </p>
 
-<h2>Why Use This Tool?</h2>
-<ul>
-<li>No signup required</li>
-<li>100% free to use</li>
-<li>Instant results</li>
-<li>Works on mobile & desktop</li>
-</ul>
+<h2>How Does It Work?</h2>
+<ol>
+<li>Enter a topic (example: fitness, travel, business)</li>
+<li>Select a tone (motivational, funny, or professional)</li>
+<li>Click generate and get a caption instantly</li>
+</ol>
 
 <div class="tool-box">
 <h2>AI Caption Generator Tool</h2>
@@ -61,24 +74,34 @@ based on user input. It helps users get creative ideas instantly.
 <button onclick="generateCaption()">Generate Caption</button>
 <div id="output">Your caption will appear here...</div>
 
-<p style="font-size:13px;color:#666">
-Note: This tool generates sample captions using predefined logic.
-Advanced AI features are under development.
+<p class="note">
+Disclaimer: This tool generates sample captions using predefined logic.
+It does not replace professional writing or human creativity.
 </p>
 </div>
 
 <h2>Who Can Use This Tool?</h2>
 <ul>
-<li>Content creators</li>
-<li>Social media managers</li>
-<li>YouTubers</li>
-<li>Small businesses</li>
+<li>Social media influencers</li>
+<li>YouTubers & content creators</li>
+<li>Digital marketers</li>
+<li>Small business owners</li>
+</ul>
+
+<h2>Why Choose Our Caption Generator?</h2>
+<ul>
+<li>No account or signup required</li>
+<li>Free and accessible worldwide</li>
+<li>Works on mobile and desktop</li>
+<li>Simple and user-friendly interface</li>
 </ul>
 
 <footer>
 <a href="about.html">About</a> |
 <a href="privacy-policy.html">Privacy Policy</a> |
+<a href="terms.html">Terms</a> |
 <a href="contact.html">Contact</a>
+<p class="note">© 2026 Free AI Tools Website</p>
 </footer>
 
 </div>
@@ -113,9 +136,7 @@ function generateCaption() {
   };
 
   const list = captions[tone];
-  const randomCaption = list[Math.floor(Math.random() * list.length)];
-
-  output.innerText = randomCaption;
+  output.innerText = list[Math.floor(Math.random() * list.length)];
 }
 </script>
 
