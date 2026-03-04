@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Free AI Caption Generator – Online AI Tool</title>
-<meta name="description" content="Free AI Caption Generator to create Instagram, Facebook & YouTube captions instantly. No signup required.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google AdSense -->
+<title>Free AI Caption Generator – Create Social Media Captions Online</title>
+<meta name="description" content="Free AI Caption Generator to create Instagram, Facebook & YouTube captions instantly. No signup required. 100% free AI tool.">
+
+<!-- Google AdSense (ONLY ONCE) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087272402697007"
 crossorigin="anonymous"></script>
 
 <style>
 body{font-family:Arial;background:#f4f6f8;margin:0}
 .container{max-width:900px;margin:auto;background:#fff;padding:20px}
+h1,h2,h3{color:#222}
+p,li{color:#444;line-height:1.6}
+.tool-box{background:#f1f1f1;padding:15px;margin:20px 0;border-radius:5px}
 input,select,button{width:100%;padding:10px;margin:8px 0}
-button{background:#007bff;color:#fff;border:none}
-#output{margin-top:10px;padding:10px;border:1px solid #ccc}
-footer{text-align:center;margin-top:20px;font-size:14px}
+button{background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer}
+#output{margin-top:10px;padding:10px;background:#fff;border:1px solid #ccc}
+footer{text-align:center;margin-top:30px;font-size:14px}
 </style>
 </head>
 
@@ -25,14 +30,25 @@ footer{text-align:center;margin-top:20px;font-size:14px}
 <h1>Free AI Caption Generator</h1>
 
 <p>
-This free AI Caption Generator helps creators generate engaging captions for Instagram, Facebook, YouTube, and Twitter. 
-No login required. 100% free tool.
+Our Free AI Caption Generator helps creators, influencers, and businesses generate engaging social media captions quickly.
+This tool is designed to save time and boost engagement on Instagram, Facebook, YouTube, and Twitter.
 </p>
 
+<h2>What is an AI Caption Generator?</h2>
 <p>
-Just enter your topic, select a tone, and get a ready-to-use caption instantly.
+An AI Caption Generator is an online tool that uses artificial intelligence concepts to generate sample captions
+based on user input. It helps users get creative ideas instantly.
 </p>
 
+<h2>Why Use This Tool?</h2>
+<ul>
+<li>No signup required</li>
+<li>100% free to use</li>
+<li>Instant results</li>
+<li>Works on mobile & desktop</li>
+</ul>
+
+<div class="tool-box">
 <h2>AI Caption Generator Tool</h2>
 
 <input id="topic" placeholder="Enter topic (fitness, travel)">
@@ -43,35 +59,39 @@ Just enter your topic, select a tone, and get a ready-to-use caption instantly.
 </select>
 
 <button onclick="generateCaption()">Generate Caption</button>
-
 <div id="output">Your caption will appear here...</div>
 
-<h2>Who Should Use This Tool?</h2>
+<p style="font-size:13px;color:#666">
+Note: This tool generates sample captions using predefined logic.
+Advanced AI features are under development.
+</p>
+</div>
+
+<h2>Who Can Use This Tool?</h2>
 <ul>
 <li>Content creators</li>
-<li>Social media influencers</li>
-<li>Small business owners</li>
-<li>Digital marketers</li>
+<li>Social media managers</li>
+<li>YouTubers</li>
+<li>Small businesses</li>
 </ul>
 
 <footer>
-<a href="how-it-works.html">How It Works</a> |
-<a href="examples.html">Examples</a> |
-<a href="faq.html">FAQ</a> |
-<a href="blog.html">Blog</a> |
-<a href="privacy-policy.html">Privacy Policy</a>
+<a href="about.html">About</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="contact.html">Contact</a>
 </footer>
 
 </div>
 
 <script>
 function generateCaption(){
-let topic=document.getElementById("topic").value;
-let tone=document.getElementById("tone").value;
-if(!topic){document.getElementById("output").innerText="Enter a topic";return;}
-document.getElementById("output").innerText=
-tone+" caption about "+topic+": Stay consistent and keep growing 🚀";
+const topic=document.getElementById("topic").value;
+const tone=document.getElementById("tone").value;
+const output=document.getElementById("output");
+if(!topic.trim()){output.innerText="Please enter a topic.";return;}
+output.innerText="Here is a "+tone+" caption about "+topic+": Stay consistent, stay creative, and keep growing 🚀";
 }
 </script>
+
 </body>
 </html>
