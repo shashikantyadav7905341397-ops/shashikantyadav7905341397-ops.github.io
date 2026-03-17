@@ -1,144 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools & Social Media Tips</title>
 
-<title>Free AI Caption Generator | Social Media Caption Tool</title>
-<meta name="description" content="Free AI Caption Generator to create social media captions for Instagram, Facebook, YouTube & Twitter. No signup required. Simple and fast online tool.">
+<meta name="description" content="Best AI tools and social media growth tips. Learn how to grow online using AI.">
 
-<!-- Google AdSense (ONLY ONCE) -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8087272402697007"
 crossorigin="anonymous"></script>
 
 <style>
-body{font-family:Arial;background:#f4f6f8;margin:0}
-header{background:#007bff;color:#fff;padding:15px}
-nav a{color:#fff;margin-right:15px;text-decoration:none;font-size:14px}
+body{font-family:Arial;margin:0;background:#f4f6f8}
 .container{max-width:900px;margin:auto;background:#fff;padding:20px}
-h1,h2,h3{color:#222}
-p,li{color:#444;line-height:1.7}
-.tool-box{background:#f1f1f1;padding:15px;margin:25px 0;border-radius:5px}
-input,select,button{width:100%;padding:10px;margin:8px 0}
-button{background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer}
-#output{margin-top:10px;padding:10px;background:#fff;border:1px solid #ccc}
-footer{text-align:center;margin-top:40px;font-size:14px;border-top:1px solid #ddd;padding-top:15px}
-.note{font-size:13px;color:#666}
+a{display:block;margin:10px 0;color:blue}
 </style>
+
 </head>
-
 <body>
-
-<header>
-<nav>
-<a href="index.html">Home</a>
-<a href="how-it-works.html">How It Works</a>
-<a href="faq.html">FAQ</a>
-<a href="blog.html">Blog</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
 
 <div class="container">
 
-<h1>Free AI Caption Generator</h1>
+<h1>Best AI Tools & Social Media Growth Guide</h1>
 
-<p>
-Welcome to our Free AI Caption Generator — an easy-to-use online tool created to help content creators,
-marketers, and businesses generate engaging social media captions in seconds.
-</p>
+<p>This website helps creators and marketers learn how to use AI tools to grow social media and online business.</p>
 
-<h2>What Is This Tool?</h2>
-<p>
-This AI Caption Generator provides sample caption ideas based on user input such as topic and tone.
-It is designed to help users overcome writer’s block and save time while creating content.
-</p>
+<h2>Latest Articles</h2>
 
-<h2>How Does It Work?</h2>
-<ol>
-<li>Enter a topic (example: fitness, travel, business)</li>
-<li>Select a tone (motivational, funny, or professional)</li>
-<li>Click generate and get a caption instantly</li>
-</ol>
-
-<div class="tool-box">
-<h2>AI Caption Generator Tool</h2>
-
-<input id="topic" placeholder="Enter topic (fitness, travel)">
-<select id="tone">
-<option>Motivational</option>
-<option>Funny</option>
-<option>Professional</option>
-</select>
-
-<button onclick="generateCaption()">Generate Caption</button>
-<div id="output">Your caption will appear here...</div>
-
-<p class="note">
-Disclaimer: This tool generates sample captions using predefined logic.
-It does not replace professional writing or human creativity.
-</p>
-</div>
-
-<h2>Who Can Use This Tool?</h2>
-<ul>
-<li>Social media influencers</li>
-<li>YouTubers & content creators</li>
-<li>Digital marketers</li>
-<li>Small business owners</li>
-</ul>
-
-<h2>Why Choose Our Caption Generator?</h2>
-<ul>
-<li>No account or signup required</li>
-<li>Free and accessible worldwide</li>
-<li>Works on mobile and desktop</li>
-<li>Simple and user-friendly interface</li>
-</ul>
+<a href="article1.html">How AI Helps Social Media Growth</a>
+<a href="article2.html">Best Free AI Tools in 2026</a>
+<a href="article3.html">How To Write Viral Captions</a>
+<a href="article4.html">Online Earning With AI</a>
 
 <footer>
-<a href="about.html">About</a> |
-<a href="privacy-policy.html">Privacy Policy</a> |
-<a href="terms.html">Terms</a> |
-<a href="contact.html">Contact</a>
-<p class="note">© 2026 Free AI Tools Website</p>
+<a href="privacy-policy.html">Privacy Policy</a>
 </footer>
 
 </div>
-
-<script>
-function generateCaption() {
-  const topic = document.getElementById("topic").value.trim();
-  const tone = document.getElementById("tone").value;
-  const output = document.getElementById("output");
-
-  if (!topic) {
-    output.innerText = "Please enter a topic.";
-    return;
-  }
-
-  const captions = {
-    Motivational: [
-      `Stay consistent with ${topic}. Success is coming 💪`,
-      `${topic} is not a choice, it's a lifestyle 🔥`,
-      `Push harder today for a better ${topic} tomorrow 🚀`
-    ],
-    Funny: [
-      `${topic}? I thought about it… then ate pizza 😂`,
-      `${topic} starts tomorrow… maybe 😅`,
-      `Doing ${topic} but thinking about snacks 🍕`
-    ],
-    Professional: [
-      `${topic} requires discipline, focus, and long-term commitment.`,
-      `Consistency in ${topic} leads to measurable results.`,
-      `Build sustainable habits around ${topic}.`
-    ]
-  };
-
-  const list = captions[tone];
-  output.innerText = list[Math.floor(Math.random() * list.length)];
-}
-</script>
 
 </body>
 </html>
